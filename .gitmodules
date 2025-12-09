@@ -1,0 +1,3 @@
+[submodule "lib/option-calculator"]
+	path = lib/option-calculator
+	url = https://github.com/stynixkis/The-module-for-calculating-the-fair-price-of-an-option-using-the-Black-Scholes-model.git
