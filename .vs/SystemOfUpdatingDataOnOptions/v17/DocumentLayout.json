@@ -1,19 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|solutionrelative:systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4884DF4-BD01-4D88-A932-364B272D6CA4}|..\\Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj|c:\\users\\aagor\\source\\repos\\module.black-shoals\\module.black-shoals\\classes\\calculatinggreeks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|solutionrelative:systemofupdatingdataonoptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -21,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CalculatingGreeks.cs",
-              "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
-              "RelativeDocumentMoniker": "..\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
-              "ToolTip": "C:\\Users\\aagor\\source\\repos\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
-              "RelativeToolTip": "..\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAUwA0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:46:17.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdatingData.cs",
-              "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
-              "RelativeDocumentMoniker": "SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
-              "ToolTip": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
-              "RelativeToolTip": "SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAkwBQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T21:09:47.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Program.cs",
-              "RelativeDocumentMoniker": "SystemOfUpdatingDataOnOptions\\Program.cs",
-              "ToolTip": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Program.cs",
-              "RelativeToolTip": "SystemOfUpdatingDataOnOptions\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:12:10.406Z"
             }
           ]
         },
@@ -87,6 +29,20 @@
           "DockedWidth": 1090,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 441,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
