@@ -18,7 +18,7 @@ namespace SystemOfUpdatingDataOnOptions.Classes.ModelsSystem
         /// </summary>
         static UpdatingData()
         {
-            _timer = new Timer(UpdatingDataOnOption, null, 0, 300000);
+            _timer = new Timer(UpdatingDataOnOption, null, 0, 20000);
         }
         /// <summary>
         /// Метод для использования класса
@@ -40,11 +40,33 @@ namespace SystemOfUpdatingDataOnOptions.Classes.ModelsSystem
                 UpdatingDataOnAmericanOption();
                 Console.WriteLine($"Обновление завершено: {DateTime.Now}");
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ошибка при обновлении данных: {ex.Message}");
-            }
-        }
+			catch (Exception ex)
+			{
+				Console.WriteLine($"Ошибка при обновлении данных: {ex.Message}");
+
+				// ДЕТАЛЬНОЕ ЛОГИРОВАНИЕ ИСКЛЮЧЕНИЯ
+				Console.WriteLine("=== ПОЛНАЯ ИНФОРМАЦИЯ ОБ ОШИБКЕ ===");
+				Console.WriteLine($"Сообщение: {ex.Message}");
+				Console.WriteLine($"Тип исключения: {ex.GetType().Name}");
+				Console.WriteLine($"StackTrace: {ex.StackTrace}");
+
+				if (ex.InnerException != null)
+				{
+					Console.WriteLine($"\nInnerException:");
+					Console.WriteLine($"Сообщение: {ex.InnerException.Message}");
+					Console.WriteLine($"Тип: {ex.InnerException.GetType().Name}");
+
+					if (ex.InnerException.InnerException != null)
+					{
+						Console.WriteLine($"\nInnerInnerException:");
+						Console.WriteLine($"Сообщение: {ex.InnerException.InnerException.Message}");
+						Console.WriteLine($"Тип: {ex.InnerException.InnerException.GetType().Name}");
+					}
+				}
+
+				Console.WriteLine("=== КОНЕЦ ИНФОРМАЦИИ ОБ ОШИБКЕ ===");
+			}
+		}
         /// <summary>
         /// Обновление данных европейских опционов
         /// </summary>

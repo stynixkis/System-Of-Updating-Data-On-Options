@@ -3,6 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|solutionrelative:systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4884DF4-BD01-4D88-A932-364B272D6CA4}|..\\Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj|c:\\users\\aagor\\source\\repos\\module.black-shoals\\module.black-shoals\\classes\\calculatinggreeks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|solutionrelative:systemofupdatingdataonoptions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +45,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatingGreeks.cs",
+              "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
+              "RelativeDocumentMoniker": "..\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
+              "ToolTip": "C:\\Users\\aagor\\source\\repos\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
+              "RelativeToolTip": "..\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAUwA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:46:17.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UpdatingData.cs",
+              "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
+              "RelativeDocumentMoniker": "SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
+              "ToolTip": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
+              "RelativeToolTip": "SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAkwBQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T21:09:47.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Program.cs",
               "RelativeDocumentMoniker": "SystemOfUpdatingDataOnOptions\\Program.cs",
@@ -46,8 +79,7 @@
               "RelativeToolTip": "SystemOfUpdatingDataOnOptions\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:12:10.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T16:12:10.406Z"
             }
           ]
         },
