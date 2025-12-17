@@ -16,10 +16,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\..\Module.Black-Shoals\Module.Black-Shoals\Module.Black-Shoals.csproj" />
+    <ProjectReference Include="..\Module.Black-Shoals\Module.Black-Shoals\Module.Black-Shoals.csproj" />
   </ItemGroup>
+
 
   <ItemGroup>
     <Folder Include="Logs\" />

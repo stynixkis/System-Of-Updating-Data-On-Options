@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemOfUpdatingDataOnOptions", "SystemOfUpdatingDataOnOptions\SystemOfUpdatingDataOnOptions.csproj", "{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module.Black-Shoals", "Module.Black-Shoals\Module.Black-Shoals\Module.Black-Shoals.csproj", "{F4884DF4-BD01-4D88-A932-364B272D6CA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module.Black-Shoals", "Module.Black-Shoals\Module.Black-Shoals\Module.Black-Shoals.csproj", "{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4884DF4-BD01-4D88-A932-364B272D6CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4884DF4-BD01-4D88-A932-364B272D6CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4884DF4-BD01-4D88-A932-364B272D6CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4884DF4-BD01-4D88-A932-364B272D6CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

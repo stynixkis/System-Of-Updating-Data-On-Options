@@ -18,7 +18,11 @@ namespace ParsingWebSite.Classes
             var hierarchy = (Hierarchy)LogManager.GetRepository();
             var fileAppender = new FileAppender();
             fileAppender.Name = "FileAppender";
-            fileAppender.File = $"../../../Logs/LogDataUpdate_{DateTime.Now.ToShortDateString()}.log";
+
+            string projectPath = GetProjectRootPath();
+            string logPath = Path.Combine(projectPath, "Logs", $"LogDataUpdate_{DateTime.Now:dd.MM.yyyy}.log");
+            Directory.CreateDirectory(Path.Combine(projectPath, "Logs"));
+            fileAppender.File = logPath;
 
             fileAppender.AppendToFile = true;
             var patternLayout = new PatternLayout();
@@ -31,6 +35,47 @@ namespace ParsingWebSite.Classes
             hierarchy.Root.AddAppender(fileAppender);
             hierarchy.Root.Level = log4net.Core.Level.All;
             hierarchy.Configured = true;
+        }
+        /// <summary>
+        /// Метод поиска проекта SystemOfUpdatingDataOnOptions (чтобы все логи были в одном месте)
+        /// </summary>
+        /// <returns></returns>
+        public static string GetProjectRootPath()
+        {
+            // поиск .sln файл
+            var currentDir = Directory.GetCurrentDirectory();
+            var directory = new DirectoryInfo(currentDir);
+
+            while (directory != null && !directory.GetFiles("*.sln").Any())
+            {
+                directory = directory.Parent;
+            }
+
+            if (directory != null)
+            {
+                var projectPath = Path.Combine(directory.FullName, "SystemOfUpdatingDataOnOptions");
+                if (Directory.Exists(projectPath))
+                {
+                    return projectPath;
+                }
+            }
+
+            // поиск по имени проекта в структуре
+            currentDir = AppContext.BaseDirectory;
+            directory = new DirectoryInfo(currentDir);
+
+            while (directory != null)
+            {
+                var projectPath = Path.Combine(directory.FullName, "SystemOfUpdatingDataOnOptions");
+                if (Directory.Exists(projectPath))
+                {
+                    return projectPath;
+                }
+                directory = directory.Parent;
+            }
+
+            // возврат текущей директории
+            return Directory.GetCurrentDirectory();
         }
     }
 }
