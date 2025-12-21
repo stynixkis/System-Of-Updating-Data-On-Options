@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SystemOfUpdatingDataOnOptio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module.Black-Shoals", "Module.Black-Shoals\Module.Black-Shoals\Module.Black-Shoals.csproj", "{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsSystemOfUpdatingDataOnOptions", "TestsSystemOfUpdatingDataOnOptions\TestsSystemOfUpdatingDataOnOptions.csproj", "{704CD9F5-A226-44C4-8E9E-DC9EEA6B2314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704CD9F5-A226-44C4-8E9E-DC9EEA6B2314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704CD9F5-A226-44C4-8E9E-DC9EEA6B2314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704CD9F5-A226-44C4-8E9E-DC9EEA6B2314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704CD9F5-A226-44C4-8E9E-DC9EEA6B2314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
