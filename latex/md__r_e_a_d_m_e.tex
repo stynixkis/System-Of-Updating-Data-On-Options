@@ -1,0 +1,122 @@
+\chapter{Модуль расчета справедливой цены опциона по модели Блека-\/Шоулза }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Модуль расчета справедливой цены опциона по модели Блека-\/Шоулза@{Модуль расчета справедливой цены опциона по модели Блека-\/Шоулза}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+
+
+{\bfseries{Модель ценообразования опционов Блэка–Шоулза}} — это модель, которая определяет теоретическую цену на европейские опционы, подразумевающая, что если базовый актив торгуется на рынке, то цена опциона на него неявным образом уже устанавливается самим рынком. Согласно модели Блэка–Шоулза ключевым элементом определения стоимости опциона является ожидаемая волатильность базового актива. В зависимости от колебания актива цена на него возрастает или понижается, что прямо пропорционально влияет на стоимость опциона. ~\newline
+Разрабатываемый модуль рассчитывает справедливую цену опционов Call и Put, согласно модели Блэка-\/Шоулза. ~\newline
+По модели Блэка-\/Шоулза считаются опционы для европейских и американских рынков. В данной реализации не используются дивиденды для европейского рынка, для американского -\/ используются.
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Структура модуля}{Структура модуля}}\label{md__r_e_a_d_m_e_autotoc_md2}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{\texorpdfstring{Класс Calculating\+Fair\+Price\+Of\+European\+Option}{Класс Calculating\+Fair\+Price\+Of\+European\+Option}}\label{md__r_e_a_d_m_e_autotoc_md3}
+Данный класс предназначен для расчета справедливой цены опциона для европейского рынка. В классе могут рассчитываться как Call, так и Put опционы. ~\newline
+Для использования класса и получения результата необходимо передать в конструктор класса необходимые параметры\+:
+\begin{DoxyItemize}
+\item Рыночная цена базового актива – текущая цена акции, валютной пары или другого актива, лежащего в основе опционного контракта. -\/ S
+\item Страйк – цена, по которой владелец опциона может купить или продать базовый актив до даты экспирации. -\/ X
+\item Время до экспирации – период, оставшийся до истечения срока действия опционного контракта (обычно выражается в годах). -\/ T
+\item Показатель волатильности – мера ожидаемых будущих колебаний цены актива, показывающая его нестабильность, выражается в годовом измерении (на сколько сильно цена может колебаться в среднем за год). – o\`{}
+\item Безрисковая процентная ставка – теоретическая норма доходности по инвестициям с нулевым финансовым риском. -\/ r ~\newline
+Пример использования класса\+:
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsubsection{\texorpdfstring{\begin{center} C\end{center} }{\begin{center} C\end{center} }}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{CalculatingFairPriceOfEuropeanOption\ newOption\ =\ \textcolor{keyword}{new}\ CalculatingFairPriceOfEuropeanOption(38.6459,\ 40,\ 0.1,\ 0.5,\ 0.3);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nS\ =\ "{}}\ +\ newOption.CurrentPriceOfUnderlyingAsset);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}K\ =\ "{}}\ +\ newOption.Strike);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}r\ =\ "{}}\ +\ newOption.RiskFreeInterestRate);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}T\ =\ "{}}\ +\ newOption.TimeToOptioneExpiration);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}o`\ =\ "{}}\ +\ newOption.Volatility);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nC\ =\ "{}}\ +\ newOption.PriceOptionCall);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}P\ =\ "{}}\ +\ newOption.PriceOptionPut);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nDelta\ C\ =\ "{}}\ +\ newOption.GreeksValue.DeltaOptionCall);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Delta\ P\ =\ "{}}\ +\ newOption.GreeksValue.DeltaOptionPut);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Gamma\ =\ "{}}\ +\ newOption.GreeksValue.Gamma);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Vega\ =\ "{}}\ +\ newOption.GreeksValue.Vega);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Teta\ C\ =\ "{}}\ +\ newOption.GreeksValue.TetaOptionCall);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Teta\ P\ =\ "{}}\ +\ newOption.GreeksValue.TetaOptionPut);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Ro\ C\ =\ "{}}\ +\ newOption.GreeksValue.RoOptionCall);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Ro\ P\ =\ "{}}\ +\ newOption.GreeksValue.RoOptionPut);}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Класс Calculating\+Fair\+Price\+Of\+American\+Option}{Класс Calculating\+Fair\+Price\+Of\+American\+Option}}\label{md__r_e_a_d_m_e_autotoc_md5}
+Данный класс предназначен для расчета справедливой цены опциона для американского рынка. В классе могут рассчитываться только Call цначения опционов. ~\newline
+Для использования класса и получения результата необходимо передать в конструктор класса необходимые параметры\+:
+\begin{DoxyItemize}
+\item Рыночная цена базового актива.
+\item Страйк.
+\item Время до экспирации.
+\item Показатель волатильности.
+\item Безрисковая процентная ставка.
+\item Размеры дивидендов
+\item Сроки до выплаты дивидендов
+\end{DoxyItemize}
+
+Размеры дивидендов и сроки до выплаты дивидендов -\/ это массивы (обычно из 1-\/2 значений). Количество элементов массивов должны совпадать (не может быть, что в размерах дивидендов только 1 запись, а в сроках до выплаты 2). ЕСЛИ переданы пустые массивы, то опцион считается без дивидендным и считается, как европейский. ~\newline
+Пример использования класса\+:\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsubsection{\texorpdfstring{\begin{center} C\end{center} }{\begin{center} C\end{center} }}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ CalculatingFairPriceOfAmericanOption\ newOption\ =\ \textcolor{keyword}{new}\ CalculatingFairPriceOfAmericanOption(40,\ 40,\ 0.1,\ 0.5,\ 0.3,\ [0.7,\ 0.7],\ [(2.0\ /\ 12),\ (5.0\ /\ 12)]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nS\ =\ "{}}\ +\ newOption.CurrentPriceOfUnderlyingAsset);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}K\ =\ "{}}\ +\ newOption.Strike);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}r\ =\ "{}}\ +\ newOption.RiskFreeInterestRate);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}T\ =\ "{}}\ +\ newOption.TimeToOptioneExpiration);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}o`\ =\ "{}}\ +\ newOption.Volatility);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nРазмеры\ дивидендов\ =\ ["{}}\ +\ \textcolor{keywordtype}{string}.Join(\textcolor{stringliteral}{"{},\ "{}},\ newOption.Dividends)\ +\ \textcolor{stringliteral}{"{}]"{}});}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Сроки\ до\ выплаты\ =\ ["{}}\ +\ \textcolor{keywordtype}{string}.Join(\textcolor{stringliteral}{"{},\ "{}},\ newOption.DividendTimes)\ +\ \textcolor{stringliteral}{"{}]"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nC\ =\ "{}}\ +\ newOption.PriceOptionCall);}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}\(\backslash\)nDelta\ C\ =\ "{}}\ +\ newOption.GreeksValue.DeltaOptionCall);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Gamma\ =\ "{}}\ +\ newOption.GreeksValue.Gamma);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Vega\ =\ "{}}\ +\ newOption.GreeksValue.Vega);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Teta\ C\ =\ "{}}\ +\ newOption.GreeksValue.TetaOptionCall);}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Ro\ C\ =\ "{}}\ +\ newOption.GreeksValue.RoOptionCall);}
+
+\end{DoxyCode}
+
+
+При попытке обращения к значениям для Put опциона (стоимость Put опциона, греки) выводится сообщение о невозможности получения значения, т.\+к. Put опцион не рассчитывается для американского рынка.\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{Класс Calculating\+Greeks}{Класс Calculating\+Greeks}}\label{md__r_e_a_d_m_e_autotoc_md7}
+Данный класс расчитан для подсчета коэффициентов чувствительности опционов (греоков). ~\newline
+Для использования класса и получения результата необходимо передать в конструктор класса необходимые параметры\+:
+\begin{DoxyItemize}
+\item Рыночная цена базового актива.
+\item Страйк.
+\item Время до экспирации.
+\item Показатель волатильности.
+\item Безрисковая процентная ставка.
+\item Коэффициент d1
+\item Коэффициент d2
+\end{DoxyItemize}
+
+Класс предназначен для использования внутри классов Calculating\+Fair\+Price\+Of\+European\+Option и Calculating\+Fair\+Price\+Of\+American\+Option. Пример использования класса\+: \hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsubsection{\texorpdfstring{\begin{center} C\end{center} }{\begin{center} C\end{center} }}\label{md__r_e_a_d_m_e_autotoc_md8}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{GreeksValue\ =\ \textcolor{keyword}{new}\ CalculatingGreeks(CurrentPriceOfUnderlyingAsset,\ Strike,\ RiskFreeInterestRate,}
+\DoxyCodeLine{\ \ \ \ TimeToOptioneExpiration,\ Volatility,\ \_d1,\ \_d2);}
+
+\end{DoxyCode}
+ После передачи параметров в конструктор производится расчет всех греков.
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysection{\texorpdfstring{Система обновления данных}{Система обновления данных}}\label{md__r_e_a_d_m_e_autotoc_md10}
+Система обновления данных создана для пересчета данных об опционах каждые несколько минут (обычно 5). Система может работать самостоятельно, а может быть внедрена в какое-\/либо другое приложение.\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{\texorpdfstring{Класс Updating\+Data}{Класс Updating\+Data}}\label{md__r_e_a_d_m_e_autotoc_md11}
+Статический класс, предназначенный для запуска таймера с обновлением данных. Пример использования класса\+: \hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsubsubsection{\texorpdfstring{\begin{center} C\end{center} }{\begin{center} C\end{center} }}\label{md__r_e_a_d_m_e_autotoc_md12}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{UpdatingData.MainUpdating();}
+\DoxyCodeLine{Console.WriteLine(\textcolor{stringliteral}{"{}Сервис\ запущен.\ Нажмите\ любую\ клавишу\ для\ остановки..."{}});}
+\DoxyCodeLine{Console.ReadKey();}
+\DoxyCodeLine{\textcolor{comment}{//\ Чтобы\ приложение\ не\ завершалось\ сразу}}
+\DoxyCodeLine{Thread.Sleep(Timeout.Infinite);}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{\texorpdfstring{Класс Logging}{Класс Logging}}\label{md__r_e_a_d_m_e_autotoc_md13}
+Класс для логирования необходим для отслеживания работы программы, определения ошибок, исключений, проблемных мест программы. 

@@ -1,0 +1,154 @@
+\doxysection{Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Greeks Class Reference}
+\hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks}{}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks}\index{Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}}
+
+
+Класс для подсчета греков  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a514d6d8a74d316cdc630ae18dd2a9815}{Calculating\+Greeks}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility, double d1, double d2)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий параметры \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_aa8f196d06407ca6d696531626f03cef4}{Calculating\+Greeks}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility\+\_\+call, double volatility\+\_\+put, double d1\+\_\+call, double d2\+\_\+call, double d1\+\_\+put, double d2\+\_\+put)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий параметры \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_afacb9738e62a373650dce4b4118df644}{Calculating\+Greeks}} (\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option}{Calculating\+Fair\+Price\+Of\+European\+Option}} european\+Option)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий экземпляр класса для подсчета европейского опциона \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_ab6056cbe97dd83d063562543791546ed}{Calculating\+Greeks}} (\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_american_option}{Calculating\+Fair\+Price\+Of\+American\+Option}} american\+Option)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимающий экземпляр класса для подсчета американского опциона \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a4d40b01b085ec1af468ce609609dd6fe}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a4d40b01b085ec1af468ce609609dd6fe} 
+double {\bfseries Delta\+Option\+Call}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Дельта, подсчитываемый для опциона Call. \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a66dcb1bf68a9967aab1cd96be3e223ee}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a66dcb1bf68a9967aab1cd96be3e223ee} 
+double? {\bfseries Delta\+Option\+Put}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Дельта, подсчитываемый для опциона Put (свойство) \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a32222279338b5684c97a3e8db1fdfcfd}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a32222279338b5684c97a3e8db1fdfcfd} 
+double {\bfseries Gamma\+Option\+Call}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Гамма, подсчитываемый для опциона Call. \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a0c7792cab86678154ea517e3d8915e6a}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a0c7792cab86678154ea517e3d8915e6a} 
+double? {\bfseries Gamma\+Option\+Put}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Гамма, подсчитываемый для опциона Put (свойство) \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a2c1c355897b50f5d056e58d95f75d413}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a2c1c355897b50f5d056e58d95f75d413} 
+double {\bfseries Vega\+Option\+Call}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Вега, подсчитываемый для опциона Call. \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_ab2ce7f42fb2873b6141518f1a3a4b7b1}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_ab2ce7f42fb2873b6141518f1a3a4b7b1} 
+double? {\bfseries Vega\+Option\+Put}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Вега, подсчитываемый для опциона Put (свойство) \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_af252b9775a4f20dd43c7f59c9590b052}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_af252b9775a4f20dd43c7f59c9590b052} 
+double {\bfseries Theta\+Option\+Call}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Тета, подсчитываемый для опциона Call. \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a4d5f0577f77df2352b7f102984128ed6}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a4d5f0577f77df2352b7f102984128ed6} 
+double? {\bfseries Theta\+Option\+Put}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Тета, подсчитываемый для опциона Put (свойство) \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a47c3727c07d77b925924cfda59df119f}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a47c3727c07d77b925924cfda59df119f} 
+double {\bfseries Rho\+Option\+Call}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Ро, подсчитываемый для опциона Call. \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a17c64c355d0f1bb417997648e9bac57c}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a17c64c355d0f1bb417997648e9bac57c} 
+double? {\bfseries Rho\+Option\+Put}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Грек Ро, подсчитываемый для опциона Put (свойство) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для подсчета греков 
+
+\label{doc-constructors}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a514d6d8a74d316cdc630ae18dd2a9815}\index{Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}!CalculatingGreeks@{CalculatingGreeks}}
+\index{CalculatingGreeks@{CalculatingGreeks}!Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}}
+\doxysubsubsection{\texorpdfstring{CalculatingGreeks()}{CalculatingGreeks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_a514d6d8a74d316cdc630ae18dd2a9815} 
+Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Greeks.\+Calculating\+Greeks (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility}{, }\item[{double}]{d1}{, }\item[{double}]{d2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса, принимающий параметры 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная цена базового актива\\
+\hline
+{\em strike} & Цена исполнения (страйк)\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility} & Волатильность\\
+\hline
+{\em d1} & Коэффициент d1\\
+\hline
+{\em d2} & Коэффициент d2\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_aa8f196d06407ca6d696531626f03cef4}\index{Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}!CalculatingGreeks@{CalculatingGreeks}}
+\index{CalculatingGreeks@{CalculatingGreeks}!Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}}
+\doxysubsubsection{\texorpdfstring{CalculatingGreeks()}{CalculatingGreeks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_aa8f196d06407ca6d696531626f03cef4} 
+Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Greeks.\+Calculating\+Greeks (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility\+\_\+call}{, }\item[{double}]{volatility\+\_\+put}{, }\item[{double}]{d1\+\_\+call}{, }\item[{double}]{d2\+\_\+call}{, }\item[{double}]{d1\+\_\+put}{, }\item[{double}]{d2\+\_\+put}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса, принимающий параметры 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная цена базового актива\\
+\hline
+{\em strike} & Цена имполнения (страйк)\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility\+\_\+call} & Волатильность для Call опциона\\
+\hline
+{\em volatility\+\_\+put} & Волатильность для Put опциона\\
+\hline
+{\em d1\+\_\+call} & Коэффициент d1 для опциона Call\\
+\hline
+{\em d2\+\_\+call} & Коэффициент d2 для опциона Call\\
+\hline
+{\em d1\+\_\+put} & Коэффициент d1 для опциона Put\\
+\hline
+{\em d2\+\_\+put} & Коэффициент d2 для опциона Put\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_afacb9738e62a373650dce4b4118df644}\index{Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}!CalculatingGreeks@{CalculatingGreeks}}
+\index{CalculatingGreeks@{CalculatingGreeks}!Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}}
+\doxysubsubsection{\texorpdfstring{CalculatingGreeks()}{CalculatingGreeks()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_afacb9738e62a373650dce4b4118df644} 
+Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Greeks.\+Calculating\+Greeks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option}{Calculating\+Fair\+Price\+Of\+European\+Option}}}]{european\+Option}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса, принимающий экземпляр класса для подсчета европейского опциона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em european\+Option} & Экземпляр класса \doxylink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option}{Calculating\+Fair\+Price\+Of\+European\+Option}\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_ab6056cbe97dd83d063562543791546ed}\index{Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}!CalculatingGreeks@{CalculatingGreeks}}
+\index{CalculatingGreeks@{CalculatingGreeks}!Module.Black\_Shoals.Classes.CalculatingGreeks@{Module.Black\_Shoals.Classes.CalculatingGreeks}}
+\doxysubsubsection{\texorpdfstring{CalculatingGreeks()}{CalculatingGreeks()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks_ab6056cbe97dd83d063562543791546ed} 
+Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Greeks.\+Calculating\+Greeks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_american_option}{Calculating\+Fair\+Price\+Of\+American\+Option}}}]{american\+Option}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса, принимающий экземпляр класса для подсчета американского опциона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em american\+Option} & Экземпляр класса \doxylink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_american_option}{Calculating\+Fair\+Price\+Of\+American\+Option}\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Module.\+Black-\/\+Shoals/\+Module.\+Black-\/\+Shoals/\+Classes/Calculating\+Greeks.\+cs\end{DoxyCompactItemize}

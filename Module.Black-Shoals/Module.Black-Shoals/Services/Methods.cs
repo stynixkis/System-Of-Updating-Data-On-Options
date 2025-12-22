@@ -1,5 +1,8 @@
 ﻿namespace Module.Black_Shoals.Service
 {
+         /// <summary>
+        /// Класс для статических методов
+        /// </summary>
     public static class Methods
     {
         /// <summary>

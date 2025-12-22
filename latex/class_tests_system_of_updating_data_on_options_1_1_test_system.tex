@@ -1,0 +1,170 @@
+\doxysection{Tests\+System\+Of\+Updating\+Data\+On\+Options.\+Test\+System Class Reference}
+\hypertarget{class_tests_system_of_updating_data_on_options_1_1_test_system}{}\label{class_tests_system_of_updating_data_on_options_1_1_test_system}\index{TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tests_system_of_updating_data_on_options_1_1_test_system_a4326a5e760a344ee174a94611c95c5a0}{Verify\+Calculation\+Price\+For\+Call\+Option\+For\+European\+Market}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility, double expected)
+\begin{DoxyCompactList}\small\item\em Тест для проверки правильности расчета стоимости Call европейского опциона \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tests_system_of_updating_data_on_options_1_1_test_system_af7768822cf5829b04fc227f0920350c9}{Verify\+Calculation\+Price\+For\+Put\+Option\+For\+European\+Market}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility, double expected)
+\begin{DoxyCompactList}\small\item\em Тест для проверки правильности расчета стоимости Put европейского опциона \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tests_system_of_updating_data_on_options_1_1_test_system_ae7054553b32c31f397d4b2d4fd733e6d}{Verify\+Calculation\+Price\+For\+Call\+Option\+For\+American\+Market}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility, double\mbox{[}$\,$\mbox{]} dividends, double\mbox{[}$\,$\mbox{]} dividend\+Times, double expected)
+\begin{DoxyCompactList}\small\item\em Тест для проверки правильности расчета стоимости Call американского опциона \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tests_system_of_updating_data_on_options_1_1_test_system_ae964d77acd35ba0ef08a38e6cf89031a}{Verify\+Calculation\+Greeks\+For\+Call\+Option}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility, double delta, double gamma, double vega, double theta, double rho)
+\begin{DoxyCompactList}\small\item\em Тест для проверки правильности расчета греков для Call опциона \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tests_system_of_updating_data_on_options_1_1_test_system_a9e2ddc7d40c07523044e3aa5f14c1d5a}{Verify\+Calculation\+Greeks\+For\+Put\+Option}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility, double delta, double gamma, double vega, double theta, double rho)
+\begin{DoxyCompactList}\small\item\em Тест для проверки правильности расчета греков для Put опциона \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_tests_system_of_updating_data_on_options_1_1_test_system_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tests_system_of_updating_data_on_options_1_1_test_system_ae964d77acd35ba0ef08a38e6cf89031a}\index{TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}!VerifyCalculationGreeksForCallOption@{VerifyCalculationGreeksForCallOption}}
+\index{VerifyCalculationGreeksForCallOption@{VerifyCalculationGreeksForCallOption}!TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}}
+\doxysubsubsection{\texorpdfstring{VerifyCalculationGreeksForCallOption()}{VerifyCalculationGreeksForCallOption()}}
+{\footnotesize\ttfamily \label{class_tests_system_of_updating_data_on_options_1_1_test_system_ae964d77acd35ba0ef08a38e6cf89031a} 
+void Tests\+System\+Of\+Updating\+Data\+On\+Options.\+Test\+System.\+Verify\+Calculation\+Greeks\+For\+Call\+Option (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility}{, }\item[{double}]{delta}{, }\item[{double}]{gamma}{, }\item[{double}]{vega}{, }\item[{double}]{theta}{, }\item[{double}]{rho}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Тест для проверки правильности расчета греков для Call опциона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная стоимость\\
+\hline
+{\em strike} & Цена исполнения\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility} & Волатильность\\
+\hline
+{\em delta} & Значение для сравнения -\/ дельта\\
+\hline
+{\em gamma} & Значение для сравнения -\/ гамма\\
+\hline
+{\em vega} & Значение для сравнения -\/ вега\\
+\hline
+{\em theta} & Значение для сравнения -\/ тета\\
+\hline
+{\em rho} & Значение для сравнения -\/ ро\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tests_system_of_updating_data_on_options_1_1_test_system_a9e2ddc7d40c07523044e3aa5f14c1d5a}\index{TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}!VerifyCalculationGreeksForPutOption@{VerifyCalculationGreeksForPutOption}}
+\index{VerifyCalculationGreeksForPutOption@{VerifyCalculationGreeksForPutOption}!TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}}
+\doxysubsubsection{\texorpdfstring{VerifyCalculationGreeksForPutOption()}{VerifyCalculationGreeksForPutOption()}}
+{\footnotesize\ttfamily \label{class_tests_system_of_updating_data_on_options_1_1_test_system_a9e2ddc7d40c07523044e3aa5f14c1d5a} 
+void Tests\+System\+Of\+Updating\+Data\+On\+Options.\+Test\+System.\+Verify\+Calculation\+Greeks\+For\+Put\+Option (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility}{, }\item[{double}]{delta}{, }\item[{double}]{gamma}{, }\item[{double}]{vega}{, }\item[{double}]{theta}{, }\item[{double}]{rho}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Тест для проверки правильности расчета греков для Put опциона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная стоимость\\
+\hline
+{\em strike} & Цена исполнения\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility} & Волатильность\\
+\hline
+{\em delta} & Значение для сравнения -\/ дельта\\
+\hline
+{\em gamma} & Значение для сравнения -\/ гамма\\
+\hline
+{\em vega} & Значение для сравнения -\/ вега\\
+\hline
+{\em theta} & Значение для сравнения -\/ тета\\
+\hline
+{\em rho} & Значение для сравнения -\/ ро\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tests_system_of_updating_data_on_options_1_1_test_system_ae7054553b32c31f397d4b2d4fd733e6d}\index{TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}!VerifyCalculationPriceForCallOptionForAmericanMarket@{VerifyCalculationPriceForCallOptionForAmericanMarket}}
+\index{VerifyCalculationPriceForCallOptionForAmericanMarket@{VerifyCalculationPriceForCallOptionForAmericanMarket}!TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}}
+\doxysubsubsection{\texorpdfstring{VerifyCalculationPriceForCallOptionForAmericanMarket()}{VerifyCalculationPriceForCallOptionForAmericanMarket()}}
+{\footnotesize\ttfamily \label{class_tests_system_of_updating_data_on_options_1_1_test_system_ae7054553b32c31f397d4b2d4fd733e6d} 
+void Tests\+System\+Of\+Updating\+Data\+On\+Options.\+Test\+System.\+Verify\+Calculation\+Price\+For\+Call\+Option\+For\+American\+Market (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility}{, }\item[{double\mbox{[}$\,$\mbox{]}}]{dividends}{, }\item[{double\mbox{[}$\,$\mbox{]}}]{dividend\+Times}{, }\item[{double}]{expected}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Тест для проверки правильности расчета стоимости Call американского опциона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная стоимость\\
+\hline
+{\em strike} & Цена исполнения\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility} & Волатильность\\
+\hline
+{\em dividends} & Дивидендная стоимость\\
+\hline
+{\em dividend\+Times} & Дата исполнения дивидендов\\
+\hline
+{\em expected} & Значение для сравнения\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tests_system_of_updating_data_on_options_1_1_test_system_a4326a5e760a344ee174a94611c95c5a0}\index{TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}!VerifyCalculationPriceForCallOptionForEuropeanMarket@{VerifyCalculationPriceForCallOptionForEuropeanMarket}}
+\index{VerifyCalculationPriceForCallOptionForEuropeanMarket@{VerifyCalculationPriceForCallOptionForEuropeanMarket}!TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}}
+\doxysubsubsection{\texorpdfstring{VerifyCalculationPriceForCallOptionForEuropeanMarket()}{VerifyCalculationPriceForCallOptionForEuropeanMarket()}}
+{\footnotesize\ttfamily \label{class_tests_system_of_updating_data_on_options_1_1_test_system_a4326a5e760a344ee174a94611c95c5a0} 
+void Tests\+System\+Of\+Updating\+Data\+On\+Options.\+Test\+System.\+Verify\+Calculation\+Price\+For\+Call\+Option\+For\+European\+Market (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility}{, }\item[{double}]{expected}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Тест для проверки правильности расчета стоимости Call европейского опциона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная стоимость\\
+\hline
+{\em strike} & Цена исполнения\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility} & Волатильность\\
+\hline
+{\em expected} & Значение для сравнения\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tests_system_of_updating_data_on_options_1_1_test_system_af7768822cf5829b04fc227f0920350c9}\index{TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}!VerifyCalculationPriceForPutOptionForEuropeanMarket@{VerifyCalculationPriceForPutOptionForEuropeanMarket}}
+\index{VerifyCalculationPriceForPutOptionForEuropeanMarket@{VerifyCalculationPriceForPutOptionForEuropeanMarket}!TestsSystemOfUpdatingDataOnOptions.TestSystem@{TestsSystemOfUpdatingDataOnOptions.TestSystem}}
+\doxysubsubsection{\texorpdfstring{VerifyCalculationPriceForPutOptionForEuropeanMarket()}{VerifyCalculationPriceForPutOptionForEuropeanMarket()}}
+{\footnotesize\ttfamily \label{class_tests_system_of_updating_data_on_options_1_1_test_system_af7768822cf5829b04fc227f0920350c9} 
+void Tests\+System\+Of\+Updating\+Data\+On\+Options.\+Test\+System.\+Verify\+Calculation\+Price\+For\+Put\+Option\+For\+European\+Market (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility}{, }\item[{double}]{expected}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Тест для проверки правильности расчета стоимости Put европейского опциона 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная стоимость\\
+\hline
+{\em strike} & Цена исполнения\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility} & Волатильность\\
+\hline
+{\em expected} & Значение для сравнения\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tests\+System\+Of\+Updating\+Data\+On\+Options/Test\+System.\+cs\end{DoxyCompactItemize}

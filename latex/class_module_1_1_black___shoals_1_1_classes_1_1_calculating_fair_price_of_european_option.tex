@@ -1,0 +1,201 @@
+\doxysection{Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option Class Reference}
+\hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option}{}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+
+
+Класс для подсчета справедливой цены европейского опциона  
+
+
+Inheritance diagram for Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a386ea57faa506847770fe048893aaceb}{Calculating\+Fair\+Price\+Of\+European\+Option}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_af2573da76d0c1d8ab9a9b93a85813345}{Calculating\+Fair\+Price\+Of\+European\+Option}} (double current\+Price\+Of\+Underlying\+Asset, double strike, double risk\+Free\+Interest\+Rate, double time\+To\+Optione\+Expiration, double volatility\+For\+Call, double volatility\+For\+Put)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a5670b2130b1adfd76dbe98566edbf9c7}{Calculating\+\_\+d1}} ()
+\begin{DoxyCompactList}\small\item\em Метод подсчета коэффициента d1. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a5093aeecd82ffb310b0c89c3e94ba834}{Calculating\+\_\+d1}} (double volatility)
+\begin{DoxyCompactList}\small\item\em Метод подсчета коэффициента d1 с передаваемой волатильностью \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_af1be66c3f7177af6c33846b2aa61d86a}{Calculating\+\_\+d2}} ()
+\begin{DoxyCompactList}\small\item\em Метод подсчета коэффициента d2. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a674360298377f3ee75468f239d5a3be5}{Calculating\+\_\+d2}} (double volatility)
+\begin{DoxyCompactList}\small\item\em Метод подсчета коэффициента d2 с передаваемой волатильностью \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a319bab0f107be0e22221e31fe862642d}{Calculating\+Price\+Option\+\_\+\+Call}} ()
+\begin{DoxyCompactList}\small\item\em Метод подсчета цены опциона Call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a1bf869af475e7a417467a4390485284a}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a1bf869af475e7a417467a4390485284a} 
+double {\bfseries Current\+Price\+Of\+Underlying\+Asset}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Рыночная цена базового актива \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a59d694f1a2accb098367fa0fb2d5577c}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a59d694f1a2accb098367fa0fb2d5577c} 
+double {\bfseries Strike}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Цена исполнения (страйк) \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a146c9960f199505763a0073d9eafe866}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a146c9960f199505763a0073d9eafe866} 
+double {\bfseries Risk\+Free\+Interest\+Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Безрисковая процентная ставка \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a969a516399e1529dda6c6b210dc6d8d4}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a969a516399e1529dda6c6b210dc6d8d4} 
+double {\bfseries Time\+To\+Optione\+Expiration}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Время до экспирации \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a545b7c76fda1aae8905fc078444edc3c}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a545b7c76fda1aae8905fc078444edc3c} 
+double {\bfseries Volatility}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Волатильность \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a75995700993bb0565d9ee6c19289dab7}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a75995700993bb0565d9ee6c19289dab7} 
+double {\bfseries Price\+Option\+Call}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Стоимость опциона Call. \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_ab5e42551924aa053c8eb446810f80362}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_ab5e42551924aa053c8eb446810f80362} 
+double {\bfseries Price\+Option\+Put}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Стоимость опциона Put. \end{DoxyCompactList}\item 
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_aef4f7d48b740f8a0bae14dd20e87967e}\label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_aef4f7d48b740f8a0bae14dd20e87967e} 
+\mbox{\hyperlink{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_greeks}{Calculating\+Greeks}} {\bfseries Greeks\+Value}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Экземпляр класса, содержащий значения греков \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для подсчета справедливой цены европейского опциона 
+
+\label{doc-constructors}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a386ea57faa506847770fe048893aaceb}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}!CalculatingFairPriceOfEuropeanOption@{CalculatingFairPriceOfEuropeanOption}}
+\index{CalculatingFairPriceOfEuropeanOption@{CalculatingFairPriceOfEuropeanOption}!Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+\doxysubsubsection{\texorpdfstring{CalculatingFairPriceOfEuropeanOption()}{CalculatingFairPriceOfEuropeanOption()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a386ea57faa506847770fe048893aaceb} 
+Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option.\+Calculating\+Fair\+Price\+Of\+European\+Option (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная цена базового актива\\
+\hline
+{\em strike} & Цена исполнения (страйк)\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility} & Волатильность\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_af2573da76d0c1d8ab9a9b93a85813345}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}!CalculatingFairPriceOfEuropeanOption@{CalculatingFairPriceOfEuropeanOption}}
+\index{CalculatingFairPriceOfEuropeanOption@{CalculatingFairPriceOfEuropeanOption}!Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+\doxysubsubsection{\texorpdfstring{CalculatingFairPriceOfEuropeanOption()}{CalculatingFairPriceOfEuropeanOption()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_af2573da76d0c1d8ab9a9b93a85813345} 
+Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option.\+Calculating\+Fair\+Price\+Of\+European\+Option (\begin{DoxyParamCaption}\item[{double}]{current\+Price\+Of\+Underlying\+Asset}{, }\item[{double}]{strike}{, }\item[{double}]{risk\+Free\+Interest\+Rate}{, }\item[{double}]{time\+To\+Optione\+Expiration}{, }\item[{double}]{volatility\+For\+Call}{, }\item[{double}]{volatility\+For\+Put}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Price\+Of\+Underlying\+Asset} & Рыночная цена\\
+\hline
+{\em strike} & Цена исполнения (страйк)\\
+\hline
+{\em risk\+Free\+Interest\+Rate} & Безрисковая процентная ставка\\
+\hline
+{\em time\+To\+Optione\+Expiration} & Время до экспирации\\
+\hline
+{\em volatility\+For\+Call} & Волатильность для опциона Call\\
+\hline
+{\em volatility\+For\+Put} & Волатильность для опциона Put\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a5670b2130b1adfd76dbe98566edbf9c7}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}!Calculating\_d1@{Calculating\_d1}}
+\index{Calculating\_d1@{Calculating\_d1}!Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+\doxysubsubsection{\texorpdfstring{Calculating\_d1()}{Calculating\_d1()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a5670b2130b1adfd76dbe98566edbf9c7} 
+double Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option.\+Calculating\+\_\+d1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод подсчета коэффициента d1. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a5093aeecd82ffb310b0c89c3e94ba834}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}!Calculating\_d1@{Calculating\_d1}}
+\index{Calculating\_d1@{Calculating\_d1}!Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+\doxysubsubsection{\texorpdfstring{Calculating\_d1()}{Calculating\_d1()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a5093aeecd82ffb310b0c89c3e94ba834} 
+double Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option.\+Calculating\+\_\+d1 (\begin{DoxyParamCaption}\item[{double}]{volatility}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод подсчета коэффициента d1 с передаваемой волатильностью 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volatility} & Волатильность\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_af1be66c3f7177af6c33846b2aa61d86a}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}!Calculating\_d2@{Calculating\_d2}}
+\index{Calculating\_d2@{Calculating\_d2}!Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+\doxysubsubsection{\texorpdfstring{Calculating\_d2()}{Calculating\_d2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_af1be66c3f7177af6c33846b2aa61d86a} 
+double Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option.\+Calculating\+\_\+d2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод подсчета коэффициента d2. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a674360298377f3ee75468f239d5a3be5}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}!Calculating\_d2@{Calculating\_d2}}
+\index{Calculating\_d2@{Calculating\_d2}!Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+\doxysubsubsection{\texorpdfstring{Calculating\_d2()}{Calculating\_d2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a674360298377f3ee75468f239d5a3be5} 
+double Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option.\+Calculating\+\_\+d2 (\begin{DoxyParamCaption}\item[{double}]{volatility}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод подсчета коэффициента d2 с передаваемой волатильностью 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volatility} & Волатильность\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a319bab0f107be0e22221e31fe862642d}\index{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}!CalculatingPriceOption\_Call@{CalculatingPriceOption\_Call}}
+\index{CalculatingPriceOption\_Call@{CalculatingPriceOption\_Call}!Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption@{Module.Black\_Shoals.Classes.CalculatingFairPriceOfEuropeanOption}}
+\doxysubsubsection{\texorpdfstring{CalculatingPriceOption\_Call()}{CalculatingPriceOption\_Call()}}
+{\footnotesize\ttfamily \label{class_module_1_1_black___shoals_1_1_classes_1_1_calculating_fair_price_of_european_option_a319bab0f107be0e22221e31fe862642d} 
+double Module.\+Black\+\_\+\+Shoals.\+Classes.\+Calculating\+Fair\+Price\+Of\+European\+Option.\+Calculating\+Price\+Option\+\_\+\+Call (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Метод подсчета цены опциона Call. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Module.\+Black-\/\+Shoals/\+Module.\+Black-\/\+Shoals/\+Classes/Calculating\+Fair\+Price\+Of\+European\+Option.\+cs\end{DoxyCompactItemize}

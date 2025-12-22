@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|solutionrelative:systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}|Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\module.black-shoals\\module.black-shoals\\module.black-shoals.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}|Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj|solutionrelative:module.black-shoals\\module.black-shoals\\module.black-shoals.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|solutionrelative:systemofupdatingdataonoptions\\systemofupdatingdataonoptions.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}|Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\module.black-shoals\\module.black-shoals\\classes\\calculatinggreeks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{787C6FB9-2AC8-4E3D-ABAA-C625AC9A8091}|Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj|solutionrelative:module.black-shoals\\module.black-shoals\\classes\\calculatinggreeks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|solutionrelative:systemofupdatingdataonoptions\\classes\\modelssystem\\updatingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5683E69D-A0BB-4A5E-A849-E9D92BFB934E}|SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj|c:\\users\\aagor\\source\\repos\\systemofupdatingdataonoptions\\systemofupdatingdataonoptions\\classes\\modelssystem\\logging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +46,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Module.Black-Shoals",
+              "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj",
+              "RelativeDocumentMoniker": "Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj",
+              "ToolTip": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj",
+              "RelativeToolTip": "Module.Black-Shoals\\Module.Black-Shoals\\Module.Black-Shoals.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-22T18:19:57.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SystemOfUpdatingDataOnOptions",
+              "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj",
+              "RelativeDocumentMoniker": "SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj",
+              "ToolTip": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj",
+              "RelativeToolTip": "SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-22T18:19:47.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CalculatingGreeks.cs",
               "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
               "RelativeDocumentMoniker": "Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
@@ -46,11 +78,12 @@
               "RelativeToolTip": "Module.Black-Shoals\\Module.Black-Shoals\\Classes\\CalculatingGreeks.cs",
               "ViewState": "AgIAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T22:57:16.758Z"
+              "WhenOpened": "2025-12-21T22:57:16.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UpdatingData.cs",
               "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
               "RelativeDocumentMoniker": "SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\UpdatingData.cs",
@@ -63,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Logging.cs",
               "DocumentMoniker": "C:\\Users\\aagor\\source\\repos\\SystemOfUpdatingDataOnOptions\\SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\Logging.cs",
               "RelativeDocumentMoniker": "SystemOfUpdatingDataOnOptions\\Classes\\ModelsSystem\\Logging.cs",
