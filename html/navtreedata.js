@@ -25,6 +25,17 @@
 var NAVTREE =
 [
   [ "System Of Updating Data On Options", "index.html", [
+    [ "Модуль расчета справедливой цены опциона по модели Блека-Шоулза", "md__r_e_a_d_m_e.html", [
+      [ "Структура модуля", "md__r_e_a_d_m_e.html#autotoc_md2", [
+        [ "Класс CalculatingFairPriceOfEuropeanOption", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+        [ "Класс CalculatingFairPriceOfAmericanOption", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
+        [ "Класс CalculatingGreeks", "md__r_e_a_d_m_e.html#autotoc_md7", null ]
+      ] ],
+      [ "Система обновления данных", "md__r_e_a_d_m_e.html#autotoc_md10", [
+        [ "Класс UpdatingData", "md__r_e_a_d_m_e.html#autotoc_md11", null ],
+        [ "Класс Logging", "md__r_e_a_d_m_e.html#autotoc_md13", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],

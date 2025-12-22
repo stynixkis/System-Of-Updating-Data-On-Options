@@ -3,7 +3,7 @@ using log4net.Appender;
 using log4net.Layout;
 using log4net.Repository.Hierarchy;
 
-namespace ParsingWebSite.Classes
+namespace SystemOfUpdatingDataOnOptions.Classes.ModelsSystem
 {
     /// <summary>
     /// Класс для создания логов
