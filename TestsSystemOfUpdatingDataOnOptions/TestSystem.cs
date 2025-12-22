@@ -4,6 +4,15 @@ namespace TestsSystemOfUpdatingDataOnOptions
 {
     public class TestSystem
     {
+        /// <summary>
+        /// Тест для проверки правильности расчета стоимости Call европейского опциона
+        /// </summary>
+        /// <param name="currentPriceOfUnderlyingAsset">Рыночная стоимость</param>
+        /// <param name="strike">Цена исполнения</param>
+        /// <param name="riskFreeInterestRate">Безрисковая процентная ставка</param>
+        /// <param name="timeToOptioneExpiration">Время до экспирации</param>
+        /// <param name="volatility">Волатильность</param>
+        /// <param name="expected">Значение для сравнения</param>
         [Theory]
         [InlineData(40, 40, 0.1, 0.5, 0.3, 4.36)]
         [InlineData(140, 40, 0.11, 0.2, 0.25, 100.87)]
@@ -17,7 +26,15 @@ namespace TestsSystemOfUpdatingDataOnOptions
 
             Assert.Equal(expected, optionTest.PriceOptionCall);
         }
-
+        /// <summary>
+        /// Тест для проверки правильности расчета стоимости Put европейского опциона
+        /// </summary>
+        /// <param name="currentPriceOfUnderlyingAsset">Рыночная стоимость</param>
+        /// <param name="strike">Цена исполнения</param>
+        /// <param name="riskFreeInterestRate">Безрисковая процентная ставка</param>
+        /// <param name="timeToOptioneExpiration">Время до экспирации</param>
+        /// <param name="volatility">Волатильность</param>
+        /// <param name="expected">Значение для сравнения</param>
         [Theory]
         [InlineData(40, 40, 0.1, 0.5, 0.3, 2.41)]
         [InlineData(140, 40, 0.11, 0.2, 0.25, 0)]
@@ -31,7 +48,17 @@ namespace TestsSystemOfUpdatingDataOnOptions
 
             Assert.Equal(expected, optionTest.PriceOptionPut);
         }
-
+        /// <summary>
+        /// Тест для проверки правильности расчета стоимости Call американского опциона
+        /// </summary>
+        /// <param name="currentPriceOfUnderlyingAsset">Рыночная стоимость</param>
+        /// <param name="strike">Цена исполнения</param>
+        /// <param name="riskFreeInterestRate">Безрисковая процентная ставка</param>
+        /// <param name="timeToOptioneExpiration">Время до экспирации</param>
+        /// <param name="volatility">Волатильность</param>
+        /// <param name="dividends">Дивидендная стоимость</param>
+        /// <param name="dividendTimes">Дата исполнения дивидендов</param>
+        /// <param name="expected">Значение для сравнения</param>
         [Theory]
         [InlineData(40, 40, 0.1, 0.5, 0.3, new double[] { 0.7 }, new double[] { (2.0 / 12) }, 3.94)]
         [InlineData(140, 20, 0.2, 0.335, 0.24, new double[] { 0.7, 0.5 }, new double[] { (2.0 / 12), (6.0 / 12) }, 121.23)]
@@ -46,6 +73,19 @@ namespace TestsSystemOfUpdatingDataOnOptions
 
             Assert.Equal(expected, optionTest.PriceOptionCall);
         }
+        /// <summary>
+        /// Тест для проверки правильности расчета греков для Call опциона
+        /// </summary>
+        /// <param name="currentPriceOfUnderlyingAsset">Рыночная стоимость</param>
+        /// <param name="strike">Цена исполнения</param>
+        /// <param name="riskFreeInterestRate">Безрисковая процентная ставка</param>
+        /// <param name="timeToOptioneExpiration">Время до экспирации</param>
+        /// <param name="volatility">Волатильность</param>
+        /// <param name="delta">Значение для сравнения - дельта</param>
+        /// <param name="gamma">Значение для сравнения - гамма</param>
+        /// <param name="vega">Значение для сравнения - вега</param>
+        /// <param name="theta">Значение для сравнения - тета</param>
+        /// <param name="rho">Значение для сравнения - ро</param>
         [Theory]
         [InlineData(40, 40, 0.1, 0.5, 0.3, 0.63374, 0.04984, 11.96243, -5.68742, 10.4935)]
         [InlineData(70, 10, 0.2, 0.8, 0.7, 0.99988, 7.84181, 21517.93274, -9415.79791, 6.8094)]
@@ -62,6 +102,19 @@ namespace TestsSystemOfUpdatingDataOnOptions
             Assert.Equal(theta, optionTest.GreeksValue.ThetaOptionCall);
             Assert.Equal(rho, optionTest.GreeksValue.RhoOptionCall);
         }
+        /// <summary>
+        /// Тест для проверки правильности расчета греков для Put опциона
+        /// </summary>
+        /// <param name="currentPriceOfUnderlyingAsset">Рыночная стоимость</param>
+        /// <param name="strike">Цена исполнения</param>
+        /// <param name="riskFreeInterestRate">Безрисковая процентная ставка</param>
+        /// <param name="timeToOptioneExpiration">Время до экспирации</param>
+        /// <param name="volatility">Волатильность</param>
+        /// <param name="delta">Значение для сравнения - дельта</param>
+        /// <param name="gamma">Значение для сравнения - гамма</param>
+        /// <param name="vega">Значение для сравнения - вега</param>
+        /// <param name="theta">Значение для сравнения - тета</param>
+        /// <param name="rho">Значение для сравнения - ро</param>
         [Theory]
         [InlineData(40, 40, 0.1, 0.5, 0.3, -0.36626, 0.04984, 11.96243, -1.88251, -8.5311)]
         [InlineData(70, 10, 0.2, 0.8, 0.7, -0.00012, 7.84181, 21517.93274, -9414.09363, -0.0078)]
